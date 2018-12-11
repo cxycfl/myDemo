@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+      body{
+          padding: 0;
+          margin: 0;
+      }
+.container .header{
+          width:100% ;
+         height: 3.5rem;
+         display: flex;
+         background: #fdd000
+         
+   }
+.container .header .image{
+       height: 3.5rem;
+}
+.container .header img{
+        /* padding-top: -0.2rem; */
+        margin-top:-0.3rem; 
+         height:100%;
+         width: 5rem;
+         z-index: -1;
+        
+   }
+   .container .header .ip{
+        padding:0.6rem 1rem 0 1rem;
+   }
+   .container .header .ip input{
+         height: 2rem;
+         
+         border-radius: 7%;
+   }
+   .container .header .title{
+         padding-top:1rem;
+   }
+   .container .header .circle{
+         width: 2rem;
+         height: 2rem;
+         border-radius: 50%;
+         background: #fff;
+         margin-top:0.8rem;
+         margin-left:0.5rem;
+   } 
+   .container .s-title{
+         display: flex;
+         flex-wrap: wrap;
+         height: 5rem;
+         background:gray;
+   }
+   .container .s-title p {
+         margin: 0;
+         padding: 0;
+         width: 16%;
+         text-align: center;
+        padding-top:0.5rem;
+        color: #fff;
+   }
+   .container .solider{
+         width: 100%;
+         height: 12rem;
+         position: relative;
+   }
+   .container .solider img{
+      position:absolute; 
+      top:0; left:0;
+      opacity:0;
+      transition:all .5s linear;
+      height: 100%;
+      width: 100%;
+   }
+   .container .solider .show{
+         opacity: 1;
+   }
+   .container .middle p{
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     font-size: 14px;
+   
+     padding-left: 1rem;
+   }
+   .container .footer{
+         display: flex;
+   }
+   .container .footer .square{
+         width: 1rem;
+         height: 1rem;
+         background: #fdd000;
+         margin-top: 1.5rem;
+   }
+   .container .footer .titleo{
+         margin-left: 1rem;
+         margin-top: 1.2rem;
+         font-weight: bold;
+   }
+   .container .footer .titlet{
+         margin-left: 13rem;
+         margin-top: 1.2rem; 
+          font-weight: bold;
+   }
+   .container .footer .titler{
+         margin-left: 1rem;
+         margin-top: 1.2rem;
+         font-weight: bold;
+   }
+   /*导航小图标*/
+   .container .s-title div{
+         width: 0.8rem;
+         height: 0.8rem;
+         transform: rotate(45deg);
+         border-bottom:2px solid #fff;
+         border-right:2px solid #fff;
+         margin-left: 1.2rem;
+         margin-top: 0.5rem;
+   }
+</style>
+<body>
+      <div class="container">
+            <div class="header">
+                  <div class="image"><img src="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/crop%3D16%2C0%2C517%2C341%3Bc0%3Dbaike80%2C5%2C5%2C80%2C26/sign=a361e301a1345982d1c5bfd231c50781/7aec54e736d12f2e8d84d91543c2d562843568c5.jpg" alt=""></div>
+                  <div class="ip"><input type="text" placeholder="请输入关键词"></div>
+                  <div class="title">名站</div>
+                  <div class="circle"></div>
+            </div>
+            <div class="s-title">
+                  <p>新闻</p>
+                  <p>财经</p>
+                  <p>体育</p>
+                  <p>娱乐</p>
+                  <p>军事</p>
+                  <p>图库</p>
+                  <p>健康</p>
+                  <p>汽车</p>
+                  <p>房产</p>
+                  <p>小说</p>
+                  <p>历史</p>
+                  <div></div>
+            </div>
+            <div class="solider" id="s1">
+                 <img src="http://29e5534ea20a8.cdn.sohucs.com/c_fill,w_320,h_213,g_faces/c_cut,x_0,y_76,w_485,h_323/os/news/96a4b0820d15e87448e31f125c9f9a86.jpg" alt="">
+                 <img src="https://p3.pstatp.com/origin/daff000537973e3012f8" alt=""  class="show">
+                 <img src="https://p1.pstatp.com/origin/da67000f4a935978f011" alt="">
+                 <img src="https://p99.pstatp.com/origin/da770010ba0978b8b1ff" alt="">
+            </div>
+            <div class="middle">
+                   <p>习近平抵达巴拿马城开始对巴拿马共和国进行国事访问</p>
+                   <p>专治天价彩礼低俗婚闹！民政部：推进婚俗改革</p>
+                   <p>这东西不被大众熟知 为何美国的关切程度不亚于贸易战</p>
+                   <p>吴承恩故居纪念馆回应“挂满六小龄童照片”：不符事实</p>
+                   <p>西安一培训机构为禁烟在公厕装监控续：摄像头已拆除</p>
+                   <p>专治天价彩礼低俗婚闹！民政部：推进婚俗改革</p>
+                   <p>这东西不被大众熟知 为何美国的关切程度不亚于贸易战</p>
+            </div>
+            <div class="footer">
+                  <div class="square"></div>
+                  <p class="titleo">要闻</p>
+                  <p class="titlet">军事</p>
+                  <p class="titler">社会</p>
+            </div>
+            <div class="middle"><p>这东西不被大众熟知 为何美国的关切程度不亚于贸易战</p></div>
+            
+      </div>
+
+      <script>
+               
+      </script>
+</body>
+</html>
